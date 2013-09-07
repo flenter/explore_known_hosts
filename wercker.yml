@@ -1,11 +1,10 @@
----
-box: wercker/ubuntu12.04-webessentials
+box: wercker/ruby
 build:
-  -steps:
-    - script:
-        name: show known_hosts
-        code:|
-          cd $HOME
-          ls -la .ssh
-          ls -la .ssh/known_hosts
-          cat .ssh/known_hosts
+    steps:
+        - script:
+            name: show known_hosts
+            code: |
+              cd $HOME
+              ls -la .ssh
+              ls -la .ssh/known_hosts
+              cat .ssh/known_hosts
