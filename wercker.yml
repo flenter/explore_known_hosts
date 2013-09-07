@@ -4,4 +4,5 @@ build:
         - script:
             name: show known_hosts
             code: |
+                export
                 ssh ssh.github.com
