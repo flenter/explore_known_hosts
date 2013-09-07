@@ -4,7 +4,7 @@ build:
   -steps:
     - script:
         name: show known_hosts
-        code:
+        code:|
           cd $HOME
           ls -la .ssh
           ls -la .ssh/known_hosts
